@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Advanced Linux Commands</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css" id="theme">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+		
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<h1>Advanced Linux Commands</h1>
+					
+					
+				</section>
+
+				<section>
+					<section>
+						<h2>alias</h2>
+						<ul>
+							<li>Launch any command or group of commands by entering a pre-set string</li>
+							<li>Allows a user to create simple names or abbreviations for commands</li>
+							
+						</ul>
+						
+					</section>
+					<section>
+						<h2>Basic Syntax</h2>
+						<br><p><font color=red>alias <font color=orange>&lt;String&gt; </font>= <font color=orange>&lt;Command&gt;</font></font></p>
+						</p><br>
+						<h3>Examples</h3>
+						<p><font color=green>alias p = <font color=orange>"pwd" </font></font></p>
+					</section>
+					
+					<section>
+						<h2>Alias</h2>
+						<br>
+						<p>An alias can be created with the same name as the core name of a command</p>
+						<br>
+						<p>An alias named ls could be created for the command ls -al</p>
+						<br>
+						<p><font color=green>alias ls= <font color=orange>"ls -al"</font></font></font></p>
+					</section>
+					
+					<section>
+						<h2>Alias</h2>
+						<br>
+						<p>Multiple commands can be included in the same alias</p>
+						<br>
+						<p>Insert them within the same pair of quotation marks and Separate them with semicolons</p>
+						<br>
+						<p><font color=green>alias pl = <font color=orange>'pwd; ls'</font></font></font></p>
+					</section>
+					
+					<section>
+						<h2>Alias</h2>
+						<br>
+						<p>Aliases can even be created to call other aliases</p>
+						
+						<p><font color=green>alias l=<font color=orange>'ls -a'</font></font></p>
+						<p><font color=green>alias pl=<font color=orange>'p; l'</font></font></p>
+						<br>
+						<p>Aliases can be used with any argument that the command can be used with</p>
+						
+							
+						<p><font color=green>l <font color=orange>/home/Documents</font></font></p>	
+					</section>
+					
+					<section>
+						<h3>Alias</h3>
+						<p>Any alias set up with it remains in effect only during the current login session</p>
+						<p>Type <font color=green>alias</font> only to see a list of aliases.</p>
+						<p>Use <font color=green>unalias</font> <font color=orange><i>alias-name</i></font> to remove an alias</p>
+						
+					</section>
+					
+					
+				</section>
+				
+				<section>
+					<section>
+						<h2>bc</h2>
+						<p><font color='grey'><b>A basic Calculator</b></font>
+						</p
+						<br><br>
+						<p>In the bc environment type expressions and get their results</p>
+						<p><font color=green>5*5+3*23</font></p>
+						<p>Use <font color=orange>last</font> to use last answer in your expression.
+						<p></font> <font color=orange><i>last</i></font> * 2 - 1</p>
+					</section>
+				</section>
+<!--
+				PIPE
+-->
+				
+				<section>
+					<section>
+						<h2>I/O Redirection</h2>
+						<h4>Pipe</h4>
+						<p>Symbol used to provide output of one command as input to another command</p>
+						
+						<h4>&lt;</h4>
+						<p>Used to direct the output to a file.</p>
+						<h4>&gt;&gt;</h4>
+						<p> Used to append the output to a file</p>
+					</section>
+				</section>
+				
+				<!-- GREP>< -->
+				<section>
+					<section>
+						<h2>grep</h2>
+<!--
+						<ul>
+							<li>Used to search text for patterns specified by the user</li>
+							<li>Allows a user to create simple names or abbreviations for commands</li>
+							
+						</ul>
+						
+-->
+						<p>Used to search text for patterns specified by the user</p>
+						<p>Basic Syntax:</p>
+						<p></p><font color=green>grep </font> <font color=orange>[pattern]  [file]</font></p>
+						<p>To see the occurances of 'is' in a file 'Intro.txt':<br> 
+							<font color=green>grep </font> <font color=orange>'is'  Intro.txt</font> </p>				
+					</section>
+				</section>
+				
+				<section>
+				<h2>ping</h2>
+				<p>Used to check if an address is accessible</p>
+				<p>Syntax: <font color=green>ping </font> <font color=orange>[destination]</font></p>
+				<p>ping transmits packets to the address and checks if it is received</p>
+				<p>To restrict number of packets use <font color=green>ping -c [no] </font></p>
+				<p>Example <font color=green>ping </font> -c  5 <font color=orange>google.com</font></p>			
+				</section>
+				
+				
+				<section>
+				<h2>ps</h2>
+				<p>Used to provide information about the currently running processes including their process identification numbers (PIDs)</p>
+				<p>Syntax: <font color=green>ps</font> </p>
+				</section>
+				<section>
+				<h2>kill</h2>
+				<p>Used to kill a process.</p>		
+				<p>Syntax: <font color=green>kill [pid]</font> </p>
+				</section>
+				<section>
+					<h2>tty</h2>
+					<p><font color='grey'><b>TeleTYpewriter</b></font></p>
+					<p>There are 6 virtual consoles in Ubuntu</p>
+					<p>They can be accessed by the keyboard shortcuts</p>
+					<p><font color=green>Ctrl</font><font color=orange>  + </font><font color=green>Alt</font>
+					<font color=orange>+</font><font color=green> F1 - F7</font>
+					<p>tty 1 to 6 have text UI while 7th has Graphics UI.</p>
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
