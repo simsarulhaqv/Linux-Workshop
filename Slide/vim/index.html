@@ -51,45 +51,56 @@
 				<section>
 					<h2>Opening Vim</h2>
 					<p>
-						type <font color = "red">vim</font> and press enter 
+						type <font color = "red">vim</font> and press enter
 					</p>
+					<br>
+					<pre><code data-trim contenteditable>
+user:~$ vim
+					</code></pre>
 				</section>
-				
+
 				<section>
 					<h2>Typing into Vim</h2>
 					<p>
-						Press <font color = "red"> i </font> and a cursor appears. Type in anything you like. When finished press <strong>Esc</strong> 
+						Press <font color = "red"> i </font> and a cursor appears. Type in anything you like. When finished press <strong>Esc</strong>
 					</p>
 				</section>
-				
+
 				<section>
 					<h2>Saving and Closing a file</h2>
 					<p>
-						Press <font color = "red"> : </font> and you will see a prompt at the bottom of the screen 
+						Press <font color = "red"> : </font> and you will see a prompt at the bottom of the screen
 					</p>
 					<p><ul>
-							<li><font color = "red"><code>w</code></font> - Saving the file</li>
-							<li><font color = "red"><code>q</code></font> - Exiting the file</li>
-							<li><font color = "red"><code>wq</code></font> - Saving and Exiting the file</li>
+							<li><font color = "red"><code>w &lt;filename&gt;</code></font> - Saving the file</li>
+							<li><font color = "red"><code>q &lt;filename&gt;</code></font> - Exiting the file</li>
+							<li><font color = "red"><code>wq &lt;filename&gt;</code></font> - Saving and Exiting the file</li>
 							<li><font color = "red"><code>q!</code></font> - Exit without saving the file</li>
 						</ul>
 					</p>
+					<pre><code data-trim contenteditable>
+: wq sample.txt
+					</code></pre>
 				</section>
-				
+
 				<section>
 					<h2>Opening Existing file</h2>
 					<p>
-						Type <font color = "red"><code>vim <font color = "orange"><code>&lt;filename&gt;</code></font></code></font>  
+						Type <font color = "red"><code>vim <font color = "orange"><code>&lt;filename&gt;</code></font></code></font>
 					</p>
+					<br>
+					<pre><code data-trim contenteditable>
+user:~$ vim sample.txt
+					</code></pre>
 				</section>
-				
+
 				<section>
 					<h2>Appending a file</h2>
 					<p>
-						Press <font color = "red"><code>A</code></font> to append in a file. Then press <strong>Esc</strong>  
+						Press <font color = "red"><code>A</code></font> to append in a file. After completion, press <strong>Esc</strong>
 					</p>
 				</section>
-				
+
 				<section>
 					<h2>Using count for motion</h2>
 					<ul>
@@ -97,135 +108,47 @@
 						<li>Press <font color = "red"><code>3e</code></font> to move 3 words forward to the end of the word</li>
 						<li>Press <font color = "red"><code>0</code></font> (zero) to move to the start of the line</li>
 					</ul>
-				</section>
-				
-				<!-- Example of nested vertical slides -->
-				<section>
-					<section>
-						<h2>Commands for Deletion</h2>
-						<p>There are several commands for deletion. Lets go through them one by one</p>
-						<p>Use the <em>Space</em> key to navigate through all slides.</p>
-						<br>
-						<a href="#" class="navigate-down">
-							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-						</a>
-					</section>
-					
-					<section>
-						<h2>Deleting a character</h2>
-						<p>
-							Put the cursor on top of the character to be deleted and press <font color = "red"><code>x</code></font>
-						</p>
-					</section>
-					
-					<section>
-						<h2>Deleting a word</h2>
-						<p>
-							Go the start of the word and press <font color = "red"><code>dw</code></font>
-						</p>
-					</section>
-					
-					<section>
-						<h2>Deleting 2 word</h2>
-						<p>
-							Go the start of the word and press <font color = "red"><code>2dw</code></font>
-						</p>
-					</section>
-					
-					<section>
-						<h2>Deleting a line</h2>
-						<p>
-							Go to the start of the line and press <font color = "red"><code>d$</code></font>
-						</p>
-						<p>
-							<font color = "red"><code>dd</code></font> also does the same. Try <font color = "red"><code>2dd</code></font>
-						</p>
-						<br>
-						<a href="#/2">
-							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Up arrow" style="transform: rotate(180deg); -webkit-transform: rotate(180deg);">
-						</a>
-					</section>
+					<br>
+					<pre><code data-trim contenteditable>
+user:~$ vim vimfile_2.cpp
+					</code></pre>
+					<br>
+					<p>Download <a href="vimfile_2.cpp">this file</a>. We will work on this now.</p>
 				</section>
 
-			
-
-				<section>
-					<h2>Undo Command</h2>
-					<p>
-						Press <font color = "red"><code>u</code></font> to undo an operation.
-					</p>
-					<p>
-						Press <font color = "red"><code>Ctrl-R</code></font> to redo the operation. 
-					</p>
-				</section>
-				
-				<section>
-					<h2>Put Command</h2>
-					<p>
-						First press <font color = "red"><code>dd</code></font> to delete a line. It actually stores the content of the deleted line.
-					</p>
-					<p>
-						Press <font color = "red"><code>p</code></font> to put <strong>(paste)</strong> the content. 
-					</p>
-				</section> 
-				
-				<section>
-					<h2>Copy and paste Command</h2>
-					<p>
-						Press <font color = "red"><code>v</code></font> to enter Visual Mode. Move the cursor to select lines to be copied.
-					</p>
-					<p>
-						Press <font color = "red"><code>y</code></font> to yank <strong>(copy)</strong> the content. 
-					</p>
-					<p>
-						Go to the specific location where content is to be pasted. Press <font color = "red"><code>p</code></font> to put <strong>(paste)</strong> 
-					</p>
-				</section> 
-
-				<section>
-					<h2>Replace Command</h2>
-					<p>
-						Move the cursor on the character to be replaced. Press <font color = "red"><code>r</code></font> and type the character you wish to type.
-					</p>
-					<p>
-						Press <font color = "red"><code>R (Shift - r)</code></font> to replace more than one characters
-					</p>
-				</section>
-				
 				<section>
 					<section>
 						<h2>Cursor Location and File Status</h2>
 						<p>
 							Its easy to navigate through the file in Vim. Lets see them.
 						</p>
-						
 						<br>
 						<a href="#" class="navigate-down">
 							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
 						</a>
 					</section>
-					
+
 					<section>
 						<h2>Knowing your present location</h2>
 						<p>
 							Press <font color = "red"><code>Ctrl-G</code></font> to know the present location of your cursor and your file. Now do remember your cursor number before you execute the next command.
 						</p>
 					</section>
-					
+
 					<section>
 						<h2>Move to the bottom of the file</h2>
 						<p>
-							Press <font color = "red"><code>G (Shift-g)</code></font> to move to the bottom of the file 
+							Press <font color = "red"><code>G (Shift-g)</code></font> to move to the bottom of the file
 						</p>
 					</section>
-					
+
 					<section>
 						<h2>Move to the top of the file</h2>
 						<p>
-							Press <font color = "red"><code>gg</code></font> to move to the bottom of the file 
+							Press <font color = "red"><code>gg</code></font> to move to the bottom of the file
 						</p>
 					</section>
-					
+
 					<section>
 						<h2>Moving to a specific line number</h2>
 						<p>
@@ -237,19 +160,127 @@
 						</a>
 					</section>
 				</section>
-				
+
+				<!-- Example of nested vertical slides -->
+				<section>
+					<section>
+						<h2>Commands for Deletion</h2>
+						<p>There are several commands for deletion. Lets go through them one by one</p>
+						<p>Use the <em>Space</em> key to navigate through all slides.</p>
+						<br>
+						<a href="#" class="navigate-down">
+							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
+						</a>
+					</section>
+
+					<section>
+						<h2>Deleting a character</h2>
+						<p>
+							Put the cursor on top of the character to be deleted and press <font color = "red"><code>x</code></font>
+						</p>
+						<blockquote>
+						<font color = "green">Go to line 25 and delete A from pushA function</font>
+					</blockquote>
+					</section>
+
+					<section>
+						<h2>Deleting a word</h2>
+						<p>
+							Go the start of the word and press <font color = "red"><code>dw</code></font>
+						</p>
+						<blockquote>
+						<font color = "green">Go to line 39 and delete the word EXTRA</font>
+					</blockquote>
+					</section>
+
+					<section>
+						<h2>Deleting 2 word</h2>
+						<p>
+							Go the start of the word and press <font color = "red"><code>2dw</code></font>
+						</p>
+						<blockquote>
+							<font color = "green">Go to line 56 and delete the words UNNECESSARY TEXT</font>
+						</blockquote>
+					</section>
+
+					<section>
+						<h2>Deleting a line</h2>
+						<p>
+							Go to the start of the line and press <font color = "red"><code>d$</code></font>
+						</p>
+						<p>
+							<font color = "red"><code>dd</code></font> also does the same. Try <font color = "red"><code>2dd</code></font>
+						</p>
+						<blockquote>
+							<font color = "green">Go to line 80 and delete the line</font>
+						</blockquote>
+						<br>
+						<a href="#/2">
+							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Up arrow" style="transform: rotate(180deg); -webkit-transform: rotate(180deg);">
+						</a>
+					</section>
+				</section>
+
+
+
+				<section>
+					<h2>Undo Command</h2>
+					<p>
+						Press <font color = "red"><code>u</code></font> to undo an operation.
+					</p>
+					<p>
+						Press <font color = "red"><code>Ctrl-R</code></font> to redo the operation.
+					</p>
+				</section>
+
+				<section>
+					<h2>Put Command</h2>
+					<p>
+						First press <font color = "red"><code>dd</code></font> to delete a line. It actually stores the content of the deleted line.
+					</p>
+					<p>
+						Press <font color = "red"><code>p</code></font> to put <strong>(paste)</strong> the content.
+					</p>
+				</section>
+
+				<section>
+					<h2>Copy and paste Command</h2>
+					<p>
+						Press <font color = "red"><code>v</code></font> to enter Visual Mode. Move the cursor to select lines to be copied.
+					</p>
+					<p>
+						Press <font color = "red"><code>y</code></font> to yank <strong>(copy)</strong> the content.
+					</p>
+					<p>
+						Go to the specific location where content is to be pasted. Press <font color = "red"><code>p</code></font> to put <strong>(paste)</strong>
+					</p>
+				</section>
+
+				<section>
+					<h2>Replace Command</h2>
+					<p>
+						Move the cursor on the character to be replaced. Press <font color = "red"><code>r</code></font> and type the character you wish to type.
+					</p>
+					<p>
+						Press <font color = "red"><code>R (Shift - r)</code></font> to replace more than one characters
+					</p>
+				</section>
+
 				<section>
 					<section>
 						<h2>Search Command</h2>
 						<p>
 							Press <font color = "red"><code>/</code></font> and type the word to be searched.
 						</p>
+						<pre><code data-trim contenteditable>
+	/push
+						</code></pre>
 						<br>
 						<a href="#" class="navigate-down">
 							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
 						</a>
 					</section>
-					
+
 					<section>
 						<h2>Searching the next word</h2>
 						<ul>
@@ -257,48 +288,57 @@
 							<li>Press <font color = "red"><code>N (Shift-n)</code></font> to search again for the same word in the opposite direction.</li>
 						</ul>
 					</section>
-					
+
 					<section>
 						<h2>Matching the parenthesis</h2>
 						<p>
-							Move to one of the parenthesis and press <font color = "red"><code>%</code></font>. You will reach its matching parenthesis. 
+							Move to one of the parenthesis and press <font color = "red"><code>%</code></font>. You will reach its matching parenthesis.
 						</p>
 					</section>
 				</section>
 
-				
+
 				<section>
 					<section>
 						<h2>Substitute Command</h2>
 						<p>
 							<code><font color = "red">:s/&lt;old_word&gt;/&lt;new_word&gt;</font></code> - Find the old word and replace with the new word
 						</p>
+						<pre><code data-trim contenteditable>
+	:s/peek/showFirst
+						</code></pre>
 						<br>
 						<a href="#" class="navigate-down">
 							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
 						</a>
 					</section>
-					
+
 					<section>
 						<h2>Substituting in the whole file</h2>
 						<p>
 							<code><font color = "red">:%s/&lt;old_word&gt;/&lt;new_word&gt;/g</font></code> - Find the old word and replace it with the new word in the whole file
 						</p>
 					</section>
-					
+
 					<section>
 						<h2>Substituting with a prompt</h2>
 						<p>
-							<code><font color = "red">:%s/&lt;old_word&gt;/&lt;new_word&gt;/g</font></code> - Find the old word and ask for prompt to replace it with the new word 
+							<code><font color = "red">:%s/&lt;old_word&gt;/&lt;new_word&gt;/gc</font></code> - Find the old word and ask for prompt to replace it with the new word
 						</p>
+						<pre><code data-trim contenteditable>
+:%s/show/print/gc
+						</code></pre>
 					</section>
 				</section>
-				
+
 				<section>
 					<h2>Practicing vim in your own pace</h2>
 					<p>
 						Type <code><font color = "red">vimtutor</font></code> in your terminal and start practicing.
 					</p>
+					<pre><code data-trim contenteditable>
+user:~$ vimtutor
+					</code></pre>
 				</section>
 
 				<section>
@@ -309,17 +349,17 @@
 
 				<section style="text-align: left;">
 					<h1>THE END</h1>
-					
+
 					<h3>Have a look at this.</h3>
 					<p>
 						- <a href="http://assoc.cse.nitc.ac.in/">CSEA webpage</a> <br>
 						- <a href="https://www.facebook.com/CSEA.NITC">CSEA facebook page</a>  <br>
-						- <a href="http://icfoss.in/">ICFOSS</a> <br>						
+						- <a href="http://icfoss.in/">ICFOSS</a> <br>
 					</p>
 					<h3>Reference Book</h3>
 					<p>
-						- <a href="http://linuxcommand.org/tlcl.php">The Linux Command Line</a> <br>						
-					</p>					
+						- <a href="http://linuxcommand.org/tlcl.php">The Linux Command Line</a> <br>
+					</p>
 				</section>
 
 			</div>
