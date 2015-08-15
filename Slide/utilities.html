@@ -4,7 +4,7 @@
 	<head>
 		<meta charset="utf-8">
 
-		<title>::</title>
+		<title>reveal.js - The HTML Presentation Framework</title>
 
 	<meta name="description" content="GNU/Linux workshop">
 		<meta name="author" content="FOSSCell, NITC">
@@ -40,100 +40,38 @@
 
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
+				
 				<section>
-					<h1>Linux filesystem</h1>
-					<p><small>by Shrimadhav U K</small></p>
-				</section>
-
-				<section>
-					<img src="images/linux-filesystem.png" />
+					<h2><font color="yellow">Some Linux Utilities</font></h2>
 				</section>
 				
 				<section>
-
-					<h3>Check this out!</h3>
-
-					<ul>
-					<li>a directory for user programs (/usr)
-					<ol>
-						<li>binary for the installed programs (/usr/bin)
-						<li>source code for the installed programs (/usr/src)
-					</ol>
-
-					<li>a directory containing the users' personal data (/home)
-
-					<li>a directory to store temporary data like print- and mail-queues (/var)
-
-					<li>a directory for third party and extra software (/opt)
-					
-					<li>a directory for the <emp>important</emp> configuration files (/etc)
-					</ul>
+					<h2><font color="yellow">Zenity</font></h2> <br />
+					<p>Try this!</p>
+					<p>zenity --info --text="Hello"</p>
 				</section>
 				
 				<section>
-					<code>ls -l</code><br />
-					<img src="images/filetypes.png" />
-					
+					<h3><font color="yellow">Try this too!</font></h3>
+					<p>--error</p>
+					<p>--question</p>
+					<p>--warning</p>
+					<p>--entry</p>
 				</section>
 				
 				<section>
-					<h1>Some more Linux utilities</h1>
-				</section>
-				
-				
-				<section>
-					<h4>login to athena dataserver</h4>
-					<code>ssh ${USERNAME} @ 192.168.40.99</code>
+					<h3><font color="yellow">Now try ssh to your friend!</font></h3> <br /> <br />
+					<p>ssh guest@192.168.40.?</p>
+					<p>Send a "Hello" to your friend</p>
 				</section>
 				
 				<section>
-					<img src="images/07.png" />
+					<code>DISPLAY=:0 zenity --info --text="Hello"</code>
 				</section>
 				
 				<section>
-					<h3>how did they DO that ?</h3>
-					
+					<a href="index.html#/1">let's go on</a>
 				</section>
-				
-				<section>
-					<code>figlet -ct -f small "Athena DataServer"</code>
-						<ol>
-							<li><code>figlet</code> : display large characters from ASCII text
-							<li><code> -c</code> : center the text on screen
-							<li><code> -t</code> : justifies according to the width of the terminal window
-							<li><code> -f small</code> : selects the font file from /usr/share/figlet/ directory
-						</ol>
-				</section>
-				
-				<section>
-					<code>fortune -s | cowsay -f tux</code>
-					<ol>
-						<li><code>fortune -s</code> : a short message for the day
-						<li>/usr/share/cowsay/cows contains a list of COWS which can be used
-						<li><code>cowsay -f</code> : takes an argument from the list of COWS available
-					</ol>
-				</section>
-				
-				<section>
-					<h2>This Presentation</h2>
-					<p>It will be available on <a href="https://github.com/simsarulhaqv/Linux-Workshop">Github</a>. Refer for any doubs!</p>
-				</section>
-
-				<section style="text-align: left;">
-					<h1>THE END</h1>
-					
-					<h3>Have a look at this.</h3>
-					<p>
-						- <a href="http://assoc.cse.nitc.ac.in/">CSEA webpage</a> <br>
-						- <a href="https://www.facebook.com/CSEA.NITC">CSEA facebook page</a>  <br>
-						- <a href="http://icfoss.in/">ICFOSS</a> <br>						
-					</p>
-					<h3>Reference Book</h3>
-					<p>
-						- <a href="http://linuxcommand.org/tlcl.php">The Linux Command Line</a> <br>						
-					</p>					
-				</section>
-
 				
 			</div>
 
