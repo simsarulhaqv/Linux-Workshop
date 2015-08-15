@@ -6,8 +6,8 @@
 
 		<title>Linux Workshop</title>
 
-		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
-		<meta name="author" content="Hakim El Hattab">
+		<meta name="description" content="Basic Linux Workshop">
+		<meta name="author" content="sims">
 
 		<meta name="apple-mobile-web-app-capable" content="yes" />
 		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
@@ -41,7 +41,7 @@
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
 				<section>
-					<h1>Linux Workshop</h1>
+					<h1><font color="yellow">Linux Workshop</font></h1>
 					<p> .</p>
 					<p> .</p>
 					<p> .</p>
@@ -52,22 +52,90 @@
 					<h2>Agenda</h2>
 					<p>
 						<a href="#/2">Introduction to FOSS</a><br />
-						<a href="#/">Basic Linux commands</a><br />
-						<a href="#/">Some Linux utilities</a><br />
-						<a href="#/">More on Basic Linux</a><br />	
+						<a href="basiclinuxcommands.html">Basic Linux commands</a><br />
+						<a href="#/5">Some Linux utilities</a><br />
+						<a href="Advanced Linux.html">More on Basic Linux</a><br />	
 						<br />
-						<a href="#/">Introduction to vim editor</a><br />
-						<a href="#/">Shell script exercise</a><br />
-						<a href="#/">Introduction to file systems</a><br />
+						<a href="vim.html">Introduction to vim editor</a><br />
+						<a href="#/10">Shell script exercise</a><br />
+						<a href="filesystem.html">Introduction to file systems</a><br />
 						<a href="#/">Some more Linux utilities</a><br />											
 						
 					</p>
 				</section>
 				
 				<section>
-					<h2>Introduction to FOSS</h2>
-					<p>Free and Open Source Software</p>
+					<h2><font color="yellow">Introduction to FOSS</font></h2>
+					<p class="fragment">Free and Open Source Software</p>
 				</section>
+				
+				<section style="text-align: left;">
+					<h3><font color="yellow">Advantages</font></h3>
+					<li>Reduced duplication of effort</li>
+					<li>Build upon the work of others</li>
+					<li>Better quality control</li>
+					<li>Reduced maintanance cost</li>
+				</section>
+				
+				<section style="text-align: left;">
+					<h3><font color="yellow">Connect with the FOSS community!</font></h3> <br>
+					<p class="fragment">ICFOSS</li>
+					<p class="fragment">Mozilla Kerala</li>
+				</section>
+				
+				<section>
+					<h2><font color="yellow">Some Linux Utilities</font></h2>
+				</section>
+				
+				<section>
+					<h2><font color="yellow">Zenity</font></h2> <br />
+					<p>Try this!</p>
+					<p>zenity --info --text="Hello"</p>
+				</section>
+				
+				<section>
+					<h3><font color="yellow">Try this too!</font></h3>
+					<p>--error</p>
+					<p>--question</p>
+					<p>--warning</p>
+					<p>--entry</p>
+				</section>
+				
+				<section>
+					<h3><font color="yellow">Now try ssh to your friend!</font></h3> <br /> <br />
+					<p>ssh guest@192.168.40.?</p>
+					<p>Send a "Hello" to your friend</p>
+				</section>
+				
+				<section>
+					<code>DISPLAY=:0 zenity --info --text="Hello"</code>
+				</section>
+				
+				<section>
+					<h2><font color="yellow">Exercise</font></h2>
+					<p>Write a shell script to set an alarm</p><br /><br />
+					<p>Instructions:</p>
+					<p>Create a file and name it as script.sh</p>
+					<p>$ <code>bash script.sh</code> </p>
+				</section>
+				
+				<section>
+					<pre><code data-trim contenteditable>
+#!/bin/bash
+echo "Sleeping for $1 minutes"
+sleep $(expr $1 \* 60)
+echo -e "\a" # Alarm
+echo "Time up"
+					</code></pre>
+				</section>
+				
+				<!-- <section>
+					<code>xeyes &amp;</code> <br /><br />
+					<p>Now check this!</p> 
+					<p>fg</p>
+					<p>bg</p>
+					<p>jobs</p>
+				</section> -->
 
 
 				<section style="text-align: left;">
