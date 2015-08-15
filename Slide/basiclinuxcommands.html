@@ -41,9 +41,9 @@
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
 			<section>
-				<h2>
+				<h1>
 					Basic Linux Commands
-				</h2>
+				</h1>
 			</section>
 			<section>
 				<h2>
@@ -51,8 +51,8 @@
 				</h2>
 				<ul>
 					<li>An operating system</li>
-					<li>Developed at AT&amp;T Bell Labs in the 1960’s</li>
-					<li>Command Line Interpreter</li>
+					<li>Developed by Linus Torvalds in the 1990s</li>
+					<li>Comes with a Command Line Interpreter (CLI)</li>
 					<li>GUIs (Window systems) are now available</li>
 				</ul>
 			</section>
@@ -69,18 +69,13 @@
 			</section>
 			<section>
 				<h2>
-					What exactly is a “shell”?
+					What exactly is a CLI or “shell”?
 				</h2>
 				<ul>
 					<li>The shell interprets commands the user types and manages their execution</li>
 					<li>The most popular shells are: tcsh, csh, korn, and bash</li>
 					<li>For this tutorial, we are using bash</li>
 				</ul>
-				<p>
-					<h5>
-						Shell commands are CASE SENSITIVE!
-					</h5>
-				</p>
 			</section>
 			<section>
 				<h2>
@@ -108,7 +103,7 @@
 				</h2>
 				<p>To change to a specific directory use cd command</p>
                 <p>
-                    Syntax: <code><font color="green">cd</font><font color="yellow"> &lt;filename&gt;</font></code>
+                    Syntax: <code><font color="green">cd</font><font color="orange"> &lt;filename&gt;</font></code>
                 </p>
 				<ul>
 					<li> “~” is the location of your home directory</li>
@@ -140,7 +135,7 @@
 			<section>
 				<h3>Options can be combined:</h3>
 				<ul>
-					<li>Command: <code><font color="green">ls</font><font color="yellow"> -ltr</font></code></li>
+					<li>Command: <code><font color="green">ls</font><font color="orange"> -ltr</font></code></li>
 				</ul>
 				<p>List files by time in reverse order with long listing</p>
 			</section>
@@ -151,165 +146,7 @@
                 </p>
 				<p><code><font color="green">*</font></code> can be used as a wildcard in Unix/Linux</p>
 			</section>
-			<section>
-				<h2>
-					mkdir
-				</h2>
-				<p>
-					To create a new directory, use the mkdir command
-				</p>
-                <p>
-                    Syntax: <code><font color="green">mkdir</font><font color="yellow"> &lt;dirname&gt;</font></code>
-                </p>
-			</section>
-			<section>
-				<h2>
-					rmdir
-				</h2>
-				<p>
-					To remove an empty directory, use "rmdir".
-				</p>
-                <p>
-                    Syntax: <code><font color="green">rmdir</font><font color="yellow"> &lt;dirname&gt;</font></code>
-                </p>
-			</section>
-			<section>
-				<h1>
-					Displaying a file
-				</h1>
-			</section>
-			<section>
-				<h2>
-					Various ways to display a file in Unix
-				</h2>
-				<ul>
-					<li>cat</li>
-					<li>less</li>
-					<li>head</li>
-					<li>tail</li>
-				</ul>
-			</section>
-			<section>
-				<h2>
-					cat
-				</h2>
-				<p>
-					Dumps an entire file to standard output
-				</p>
-                <p>
-                    Syntax: <code><font color="green">cat</font><font color="yellow"> &lt;filename&gt;</font></code>
-                </p>
-			</section>
-			<section>
-				<h2>
-					less
-				</h2>
-				<p>
-					“less” displays a file, allowing forward/backward movement within it
-				</p>
-                <p>
-                    Syntax: <code><font color="green">less</font><font color="yellow"> &lt;filename&gt;</font></code>
-                </p>
-				<p>
-					<ul>
-						<li>return scrolls forward one line, space one page</li>
-						<li>y scrolls back one line, b one page</li>
-						<li>use “/” to search for a string</li>
-						<li>Press q to quit</li>
-					</ul>
-				</p>
-			</section>
-			<section>
-				<h2>
-					head
-				</h2>
-				<p>
-					“head” displays the top part of a file
-				</p>
-                <p>
-                    Syntax: <code><font color="green">head</font><font color="yellow"> &lt;filename&gt;</font></code>
-                </p>
-				<ul>
-						<li>return scrolls forward one line, space one page</li>
-						<li>y scrolls back one line, b one page</li>
-						<li>use “/” to search for a string</li>
-						<li>Press q to quit</li>
-					</ul>
-			</section>
-			<section>
-				<h2>
-					tail
-				</h2>
-				<p>
-					Same as head, but shows the last lines
-				</p>
-                <p>
-                    Syntax: <code><font color="green">tail</font><font color="yellow"> &lt;filename&gt;</font></code>
-                </p>
-			</section>
             <section>
-                <h1>
-                    File Commands
-                </h1>
-            </section>
-			<section>
-				<h2>
-					Common File Commands
-				</h2>
-				<p>
-					<ul>
-						<li>Copying a file: cp</li>
-						<li>Move or rename a file: mv</li>
-						<li>Remove a file: rm</li>
-					</ul>
-				</p>
-			</section>
-			<section>
-				<h2>
-					cp
-				</h2>
-				<p>
-					Copies a file from source to destination
-				</p>
-                <p>
-                    Syntax: <code><font color="green">cp</font><font color="yellow"> &lt;source&gt; &lt;destination&gt;</font></code>
-                </p>
-			</section>
-			<section>
-				<h2>
-					mv
-				</h2>
-				<p>
-					To move a file to a different location use “mv”
-				</p>
-                <p>
-                    Syntax: <code><font color="green">command</font><font color="yellow"> &lt;source&gt; &lt;destination&gt;</font></code>
-                </p>
-				<p>
-					<ul>
-						<li>mv can also be used to rename a file</li>
-					</ul>
-				</p>
-			</section>
-			<section>
-				<h2>
-					rm
-				</h2>
-				<p>
-					To remove a file use “rm”
-				</p>
-                <p>
-                    Syntax: <code><font color="green">rm</font><font color="yellow"> &lt;filename&gt;</font></code>
-                </p>
-				<ul>
-					<li>To remove a file recursively, type: <code><font color="green">rm</font><font color="yellow"> -r</font></code></li>
-					<li>Used to remove all files and directories </li>
-				</ul>
-			<p>
-				<h4>Be very careful, deletions are permanent in Unix/Linux</h4>
-			</p>
-			</section>
-			<section>
 				<h1>PERMISSIONS</h1>
 			</section>
 			<section>
@@ -347,9 +184,168 @@
 					If you own the file, you can change its permissions with “chmod”
 				</p>
                 <p>
-                    Syntax: <code><font color="green">chmod</font><font color="yellow"> [user/group/others/all]+[permission] [file(s)]</font></code>
+                    Syntax: <code><font color="green">chmod</font><font color="orange"> [user/group/others/all]+[permission] [file(s)]</font></code>
                 </p>
 			</section>
+			<section>
+				<h2>
+					mkdir
+				</h2>
+				<p>
+					To create a new directory, use the mkdir command
+				</p>
+                <p>
+                    Syntax: <code><font color="green">mkdir</font><font color="orange"> &lt;dirname&gt;</font></code>
+                </p>
+			</section>
+			<section>
+				<h2>
+					rmdir
+				</h2>
+				<p>
+					To remove an empty directory, use "rmdir".
+				</p>
+                <p>
+                    Syntax: <code><font color="green">rmdir</font><font color="orange"> &lt;dirname&gt;</font></code>
+                </p>
+			</section>
+			<section>
+				<h1>
+					Displaying a file
+				</h1>
+			</section>
+			<section>
+				<h2>
+					Various ways to display a file in Unix
+				</h2>
+				<ul>
+					<li>cat</li>
+					<li>less</li>
+					<li>head</li>
+					<li>tail</li>
+				</ul>
+			</section>
+			<section>
+				<h2>
+					cat
+				</h2>
+				<p>
+					Dumps an entire file to standard output
+				</p>
+                <p>
+                    Syntax: <code><font color="green">cat</font><font color="orange"> &lt;filename&gt;</font></code>
+                </p>
+			</section>
+			<section>
+				<h2>
+					less
+				</h2>
+				<p>
+					“less” displays a file, allowing forward/backward movement within it
+				</p>
+                <p>
+                    Syntax: <code><font color="green">less</font><font color="orange"> &lt;filename&gt;</font></code>
+                </p>
+				<p>
+					<ul>
+						<li>return scrolls forward one line, space one page</li>
+						<li>y scrolls back one line, b one page</li>
+						<li>use “/” to search for a string</li>
+						<li>Press q to quit</li>
+					</ul>
+				</p>
+			</section>
+			<section>
+				<h2>
+					head
+				</h2>
+				<p>
+					“head” displays the top part of a file
+				</p>
+                <p>
+                    Syntax: <code><font color="green">head</font><font color="orange"> &lt;filename&gt;</font></code>
+                </p>
+				<ul>
+						<li>return scrolls forward one line, space one page</li>
+						<li>y scrolls back one line, b one page</li>
+						<li>use “/” to search for a string</li>
+						<li>Press q to quit</li>
+					</ul>
+			</section>
+			<section>
+				<h2>
+					tail
+				</h2>
+				<p>
+					Same as head, but shows the last lines
+				</p>
+                <p>
+                    Syntax: <code><font color="green">tail</font><font color="orange"> &lt;filename&gt;</font></code>
+                </p>
+			</section>
+            <section>
+                <h1>
+                    File Commands
+                </h1>
+            </section>
+			<section>
+				<h2>
+					Common File Commands
+				</h2>
+				<p>
+					<ul>
+						<li>Copying a file: cp</li>
+						<li>Move or rename a file: mv</li>
+						<li>Remove a file: rm</li>
+					</ul>
+				</p>
+			</section>
+			<section>
+				<h2>
+					cp
+				</h2>
+				<p>
+					Copies a file from source to destination
+				</p>
+                <p>
+                    Syntax: <code><font color="green">cp</font><font color="orange"> &lt;source&gt; &lt;destination&gt;</font></code>
+                </p>
+			</section>
+			<section>
+				<h2>
+					mv
+				</h2>
+				<p>
+					To move a file to a different location use “mv”
+				</p>
+                <p>
+                    Syntax: <code><font color="green">command</font><font color="orange"> &lt;source&gt; &lt;destination&gt;</font></code>
+                </p>
+				<p>
+					<ul>
+						<li>mv can also be used to rename a file</li>
+					</ul>
+				</p>
+			</section>
+			<section>
+				<h2>
+					rm
+				</h2>
+				<p>
+					To remove a file use “rm”
+				</p>
+                <p>
+                    Syntax: <code><font color="green">rm</font><font color="orange"> &lt;filename&gt;</font></code>
+                </p>
+				<ul>
+					<li>To remove a file recursively, type: <code><font color="green">rm</font><font color="orange"> -r</font></code></li>
+					<li>Used to remove all files and directories </li>
+				</ul>
+			<p>
+				<h4>Be very careful, deletions are permanent in Unix/Linux</h4>
+			</p>
+			</section>
+			
 			<section>
 				<h2>
 					wc
@@ -358,7 +354,7 @@
 					To count the characters, words, and lines in a file use “wc”
 				</p>
                 <p>
-                    Syntax: <code><font color="green">wc</font><font color="yellow"> &lt;filename&gt;</font></code>
+                    Syntax: <code><font color="green">wc</font><font color="orange"> &lt;filename&gt;</font></code>
                 </p>
 				<p>
 					The outputs are lines, words and characters.
@@ -374,9 +370,6 @@
 					<li><a href="https://en.wikipedia.org/wiki/Linux">Linux on Wikipedia</a></li>
 				</ul>
 			</section>
-            <section>
-                <h1>Thank You</h1>
-            </section>
 
 
 			<section>
