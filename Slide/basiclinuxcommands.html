@@ -42,12 +42,333 @@
 			<div class="slides">
 			<section>
 				<h2>
-					Aashish is fish
+					Basic Linux Commands
 				</h2>
+				<h3>Aashish Satyajith</h3>
 			</section>
-
+			<section>
+				<h2>
+					Introduction: What is Unix?
+				</h2>
+				<ul>
+					<li>An operating system</li>
+					<li>Developed at AT&T Bell Labs in the 1960’s</li>
+					<li>Command Line Interpreter</li>
+					<li>GUIs (Window systems) are now available</li>
+				</ul>
+			</section>
+			<section>
+				<h2>
+					Introduction: Unix vs. Linux
+				</h2>
+				<ul>
+					<li>Unix was the predecessor of Linux</li>
+					<li>Linux is a variant of Unix</li>
+					<li>So is Mac OS X, so much of this tutorial applies to Macs as well</li>
+					<li>Linux is open source</li>					</ul>
+			</section>
+			<section>
+				<h2>
+					Introduction: Why Unix/Linux?
+				</h2>
+				<ul>
+					<li>Linux is free</li>
+					<li>It’s fully customizable</li>					
+					<li>It’s stable (i.e. it almost never crashes)</li>
+					<li>These characteristics make it an ideal OS for programmers and scientists</li>					
+				</ul>
+			</section>
+			<section>
+				<h2>
+					What exactly is a “shell”?
+				</h2>
+				<ul>
+					<li>The shell interprets commands the user types and manages their execution</li>
+					<li>The shell communicates with the internal part of the operating system called the kernel</li>					
+					<li>The most popular shells are: tcsh, csh, korn, and bash</li>
+					<li>For this tutorial, we are using bash</li>
+				</ul>
+				<p>
+					<h5>
+						Shell commands are CASE SENSITIVE!
+					</h5>
+				</p>				
+			</section>
+			<section>
+				<h2>
+					Help!
+				</h2>
+				Whenever you need help with a command type “man” and the command name			</section>
+			<section>
+				<h1>FILE SYSTEM COMMANDS</h1>
+			</section>
+			<section>
+				<h2>
+					Command: pwd
+				</h2>
+				To find your current path use “pwd”
+			</section>
+			<section>
+				<h2>
+					Command: cd filename
+				</h2>
+				<p>To change to a specific directory use “cd”</p>
+				<ul>
+					<li> “~” is the location of your home directory</li>
+					<li>“..” is the location of the directory below current one</li>
+				</ul>
+			</section>
+			<section>
+				<h2>
+					Command: ls
+				</h2>
+				To list the files in the current directory use “ls”
+			</section>
+			<section>
+				<h3>
+					ls has many options:
+				</h3>
+				<ul>
+					<li>-l  long list (displays lots of info)</li>
+					<li>-t  sort by modification time</li>
+					<li>-S sort by size</li>
+					<li>-h list file sizes in human readable format</li>
+					<li>-r reverse the order</li>						
+				</ul>
+				<p>Type “man ls” for more options</p>				
+			</section>			
+			<section>
+				<h3>Options can be combined:</h3>
+				<ul>
+					<li>Command: ls -ltr</li>
+				</ul>
+				<p>List files by time in reverse order with long listing</p>
+			</section>
+			<section>
+				<h2>General Syntax: *</h2>
+				<p>“*” can be used as a wildcard in Unix/Linux</p>
+			</section>
+			<section>
+				<h2>
+					Command: mkdir
+				</h2>
+				<p>
+					To create a new directory use “mkdir”
+				</p>
+			</section>
+			<section>
+				<h2>
+					Command: rmdir
+				</h2>
+				<p>
+					To remove and empty directory use “rmdir”
+				</p>
+			</section>
+			<section>
+				<h1>
+					Displaying a file
+				</h1>
+			</section>
+			<section>
+				<h2>
+					Various ways to display a file in Unix
+				</h2>
+				<ul>
+					<li>cat</li>
+					<li>less</li>
+					<li>head</li>
+					<li>tail</li>
+				</ul>
+			</section>
+			<section>
+				<h2>
+					Command: cat
+				</h2>
+				<p>
+					Dumps an entire file to standard output
+				</p>
+			</section>
+			<section>
+				<h2>
+					Command: less
+				</h2>
+				<p>
+					“less” displays a file, allowing forward/backward movement within it
+				</p>
+				<p>
+					<ul>
+						<li>return scrolls forward one line, space one page</li>
+						<li>y scrolls back one line, b one page</li>
+						<li>use “/” to search for a string</li>
+						<li>Press q to quit</li>
+					</ul>
+				</p>
+			</section>
+			<section>
+				<h2>
+					Command: head
+				</h2>
+				<p>
+					“head” displays the top part of a file
+				</p>
+				<ul>
+						<li>return scrolls forward one line, space one page</li>
+						<li>y scrolls back one line, b one page</li>
+						<li>use “/” to search for a string</li>
+						<li>Press q to quit</li>
+					</ul>
+			</section>
+			<section>
+				<h2>
+					Command: tail
+				</h2>
+				<p>
+					Same as head, but shows the last lines
+				</p>
+			</section>
+			<section>
+				<h2>
+					File Commands
+				</h2>
+				<p>
+					<ul>
+						<li>Copying a file: cp</li>
+						<li>Move or rename a file: mv</li>
+						<li>Remove a file: rm</li>
+					</ul>
+				</p>
+			</section>
+			<section>
+				<h2>
+					Command: cp source destination
+				</h2>
+				<p>
+					Copies a file from source to destination
+				</p>
+			</section>
+			<section>
+				<h2>
+					Command: mv source destination
+				</h2>
+				<p>
+					To move a file to a different location use “mv”
+				</p>
+				<p>
+					<ul>
+						<li>mv can also be used to rename a file</li>
+					</ul>
+				</p>
+			</section>
+			<section>
+				<h2>
+					Command: rm filename
+				</h2>
+				<p>
+					To remove a file use “rm”
+				</p>
+				<ul>
+					<li>To remove a file “recursively”: rm –r</li>
+					<li>Used to remove all files and directories </li>
+				</ul>
+			<p>
+				<h4>Be very careful, deletions are permanent in Unix/Linux</h4>				
+			</p>
+			</section>
+			<section>
+				<h1>PERMISSIONS</h1>
+			</section>
+			<section>
+				<h2>
+					File permissions
+				</h2>
+				<p>
+					<ul>
+						<li>Each file in Unix/Linux has an associated permission level</li>
+						<li>This allows the user to prevent others from reading/writing/executing their files or directories</li>
+						<li>Use “ls -l filename” to find the permission level of that file</li>
+					</ul>
+				</p>
+			</section>
+			<section>
+				<h2>
+					Permission levels
+				</h2>
+				<p>
+					<ul>
+						<li>“r” means “read only” permission</li>
+						<li>“w” means “write” permission</li>
+						<li>“x” means “execute” permission</li>
+					</ul>
+				</p>
+				<p>
+					In case of directory, “x” grants permission to list directory contents
+				</p>
+			</section>
+			<section>
+				<h2>
+					Command: chmod
+				</h2>
+				<p>
+					If you own the file, you can change its permissions with “chmod”
+				</p>
+				<p>
+					Syntax: chmod [user/group/others/all]+[permission] [file(s)]
+				</p>
+			</section>
+			<section>
+				<h1>PROCESS COMMANDS</h1>
+			</section>
+			<section>
+				<h2>
+					Command: ps
+				</h2>
+				<p>
+					To view the processes that you’re running
+				</p>
+			</section>
+			<section>
+				<h2>
+					Command: top
+				</h2>
+				<p>
+					To view the CPU usage of all processes
+				</p>
+			</section>
+			<section>
+				<h2>
+					Command: kill
+				</h2>
+				<p>
+					To terminate a process use “kill”
+				</p>
+			</section>
+			<section>
+				<h2>
+					Command: wc
+				</h2>
+				<p>
+					To count the characters, words, and lines in a file use “wc”
+				</p>
+				<p>
+					The first column in the output is lines, the second is words, and the last is characters
+				</p>
+			</section>
+			<section>
+				<h2>
+					Web Resources
+				</h2>
+				<ul>
+					<li><a href="http://www.ee.surrey.ac.uk/Teaching/Unix/">UNIX Tutorial for Beginners</a></li>
+					<li><a href="http://www.ugu.com/sui/ugu/show?help.beginners">Unix Guru Universe</a></li>
+					<li><a href="https://en.wikipedia.org/wiki/Linux">Linux on Wikipedia</a></li>
+				</ul>
+			</section>			
+			<section>
+				<h1>Thank You!</h1>
+				<h2>Sneak Peek: write what's next here</h2>
+			</section>
+			
 			</div>
-
 		</div>
 
 		<script src="lib/js/head.min.js"></script>
