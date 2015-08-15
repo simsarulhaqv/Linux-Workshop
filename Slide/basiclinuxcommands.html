@@ -15,6 +15,7 @@
 
 		<link rel="stylesheet" href="css/reveal.css">
 		<link rel="stylesheet" href="css/theme/black.css" id="theme">
+        <link rel="stylesheet" href="css/basiclinux.css">
 
 		<!-- Code syntax highlighting -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
@@ -43,32 +44,21 @@
 				<h2>
 					Basic Linux Commands
 				</h2>
-				<p><small>Created by: Aashish Satyajith</small></p>
 			</section>
 			<section>
 				<h2>
-					Introduction: What is Unix?
+					Introduction: What is Linux?
 				</h2>
 				<ul>
 					<li>An operating system</li>
-					<li>Developed at AT&T Bell Labs in the 1960’s</li>
+					<li>Developed at AT&amp;T Bell Labs in the 1960’s</li>
 					<li>Command Line Interpreter</li>
 					<li>GUIs (Window systems) are now available</li>
 				</ul>
 			</section>
-			<section>
+			<section id="aash_code">
 				<h2>
-					Introduction: Unix vs. Linux
-				</h2>
-				<ul>
-					<li>Unix was the predecessor of Linux</li>
-					<li>Linux is a variant of Unix</li>
-					<li>So is Mac OS X, so much of this tutorial applies to Macs as well</li>
-					<li>Linux is open source</li>					</ul>
-			</section>
-			<section>
-				<h2>
-					Introduction: Why Unix/Linux?
+                    Introduction: Why Unix/Linux?
 				</h2>
 				<ul>
 					<li>Linux is free</li>
@@ -83,7 +73,6 @@
 				</h2>
 				<ul>
 					<li>The shell interprets commands the user types and manages their execution</li>
-					<li>The shell communicates with the internal part of the operating system called the kernel</li>
 					<li>The most popular shells are: tcsh, csh, korn, and bash</li>
 					<li>For this tutorial, we are using bash</li>
 				</ul>
@@ -97,21 +86,30 @@
 				<h2>
 					Help!
 				</h2>
-				Whenever you need help with a command type “man” and the command name			</section>
+				Whenever you need help with a command type <code><font color="green">man</font></code> followed by the command name
+            </section>
 			<section>
 				<h1>FILE SYSTEM COMMANDS</h1>
 			</section>
 			<section>
 				<h2>
-					Command: pwd
+					pwd
 				</h2>
-				To find your current path use “pwd”
+                <p>
+                    To find your current path use “pwd”
+                </p>
+                <p>
+                    Syntax: <code><font color="green">pwd</font></code>
+                </p>
 			</section>
 			<section>
 				<h2>
-					Command: cd filename
+					cd
 				</h2>
-				<p>To change to a specific directory use “cd”</p>
+				<p>To change to a specific directory use cd command</p>
+                <p>
+                    Syntax: <code><font color="green">cd</font><font color="yellow"> &lt;filename&gt;</font></code>
+                </p>
 				<ul>
 					<li> “~” is the location of your home directory</li>
 					<li>“..” is the location of the directory below current one</li>
@@ -119,9 +117,12 @@
 			</section>
 			<section>
 				<h2>
-					Command: ls
+					ls
 				</h2>
 				To list the files in the current directory use “ls”
+                <p>
+                    Syntax: <code><font color="green">ls</font></code>
+                </p>
 			</section>
 			<section>
 				<h3>
@@ -139,7 +140,7 @@
 			<section>
 				<h3>Options can be combined:</h3>
 				<ul>
-					<li>Command: ls -ltr</li>
+					<li>Command: <code><font color="green">ls</font><font color="yellow"> -ltr</font></code></li>
 				</ul>
 				<p>List files by time in reverse order with long listing</p>
 			</section>
@@ -149,19 +150,25 @@
 			</section>
 			<section>
 				<h2>
-					Command: mkdir
+					mkdir
 				</h2>
 				<p>
-					To create a new directory use “mkdir”
+					To create a new directory use mkdir
 				</p>
+                <p>
+                    Syntax: <code><font color="green">mkdir</font><font color="yellow"> &lt;dirname&gt;</font></code>
+                </p>
 			</section>
 			<section>
 				<h2>
-					Command: rmdir
+					rmdir
 				</h2>
 				<p>
 					To remove and empty directory use “rmdir”
 				</p>
+                <p>
+                    Syntax: <code><font color="green">rmdir</font><font color="yellow"> &lt;dirname&gt;</font></code>
+                </p>
 			</section>
 			<section>
 				<h1>
@@ -181,19 +188,25 @@
 			</section>
 			<section>
 				<h2>
-					Command: cat
+					cat
 				</h2>
 				<p>
 					Dumps an entire file to standard output
 				</p>
+                <p>
+                    Syntax: <code><font color="green">cat</font><font color="yellow"> &lt;filename&gt;</font></code>
+                </p>
 			</section>
 			<section>
 				<h2>
-					Command: less
+					less
 				</h2>
 				<p>
 					“less” displays a file, allowing forward/backward movement within it
 				</p>
+                <p>
+                    Syntax: <code><font color="green">less</font><font color="yellow"> &lt;filename&gt;</font></code>
+                </p>
 				<p>
 					<ul>
 						<li>return scrolls forward one line, space one page</li>
@@ -205,11 +218,14 @@
 			</section>
 			<section>
 				<h2>
-					Command: head
+					head
 				</h2>
 				<p>
 					“head” displays the top part of a file
 				</p>
+                <p>
+                    Syntax: <code><font color="green">head</font><font color="yellow"> &lt;filename&gt;</font></code>
+                </p>
 				<ul>
 						<li>return scrolls forward one line, space one page</li>
 						<li>y scrolls back one line, b one page</li>
@@ -219,11 +235,14 @@
 			</section>
 			<section>
 				<h2>
-					Command: tail
+					tail
 				</h2>
 				<p>
 					Same as head, but shows the last lines
 				</p>
+                <p>
+                    Syntax: <code><font color="green">tail</font><font color="yellow"> &lt;filename&gt;</font></code>
+                </p>
 			</section>
 			<section>
 				<h2>
@@ -239,19 +258,25 @@
 			</section>
 			<section>
 				<h2>
-					Command: cp source destination
+					cp
 				</h2>
 				<p>
 					Copies a file from source to destination
 				</p>
+                <p>
+                    Syntax: <code><font color="green">cp</font><font color="yellow"> &lt;source&gt; &lt;destination&gt;</font></code>
+                </p>
 			</section>
 			<section>
 				<h2>
-					Command: mv source destination
+					mv
 				</h2>
 				<p>
 					To move a file to a different location use “mv”
 				</p>
+                <p>
+                    Syntax: <code><font color="green">command</font><font color="yellow"> &lt;source&gt; &lt;destination&gt;</font></code>
+                </p>
 				<p>
 					<ul>
 						<li>mv can also be used to rename a file</li>
@@ -260,11 +285,14 @@
 			</section>
 			<section>
 				<h2>
-					Command: rm filename
+					rm
 				</h2>
 				<p>
 					To remove a file use “rm”
 				</p>
+                <p>
+                    Syntax: <code><font color="green">command</font><font color="yellow"> &lt;filename&gt;</font></code>
+                </p>
 				<ul>
 					<li>To remove a file “recursively”: rm –r</li>
 					<li>Used to remove all files and directories </li>
@@ -305,49 +333,25 @@
 			</section>
 			<section>
 				<h2>
-					Command: chmod
+					chmod
 				</h2>
 				<p>
 					If you own the file, you can change its permissions with “chmod”
 				</p>
-				<p>
-					Syntax: chmod [user/group/others/all]+[permission] [file(s)]
-				</p>
-			</section>
-			<section>
-				<h1>PROCESS COMMANDS</h1>
+                <p>
+                    Syntax: <code><font color="green">chmod</font><font color="yellow"> &lt;[user/group/others/all]+[permission] [file(s)]&gt;</font></code>
+                </p>
 			</section>
 			<section>
 				<h2>
-					Command: ps
-				</h2>
-				<p>
-					To view the processes that you’re running
-				</p>
-			</section>
-			<section>
-				<h2>
-					Command: top
-				</h2>
-				<p>
-					To view the CPU usage of all processes
-				</p>
-			</section>
-			<section>
-				<h2>
-					Command: kill
-				</h2>
-				<p>
-					To terminate a process use “kill”
-				</p>
-			</section>
-			<section>
-				<h2>
-					Command: wc
+					wc
 				</h2>
 				<p>
 					To count the characters, words, and lines in a file use “wc”
 				</p>
+                <p>
+                    Syntax: <code><font color="green">command</font><font color="yellow"> &lt;filename&gt;</font></code>
+                </p>
 				<p>
 					The first column in the output is lines, the second is words, and the last is characters
 				</p>
