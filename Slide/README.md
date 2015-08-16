@@ -1,4 +1,29 @@
-# reveal.js [![Build Status](https://travis-ci.org/hakimel/reveal.js.svg?branch=master)](https://travis-ci.org/hakimel/reveal.js)
+# An Introduction to Linux and its Commands
+
+This presentation has been made by the executives of CSEA (2013-17 batch). The contributors are [Piyush Bhopalka](http://github.com/pbhopalka), [Simsarul Haq](http://github.com/simsarulhaqv), [Prabhav Adhikari](http://github.com/prabhavad), [Aashish Satyajith](http://github.com/aashishsatya), [Shrimadhav U K](http://github.com/spechide).
+
+# Basic Agenda of the Presentation
+
+- Introduction to FOSS (Free Open Source Software)
+- Basic Linux Commands
+- Some Linux Utilities
+- More on Basic Linux
+- Introduction to Vim Editor
+- Shell Script Exercise
+- Introduction to File Systems
+- Some more Linux Utilities
+
+Each topic has a separate HTML page created so that a user can open only the required page and that helps in the navigation too.
+
+This presentation uses the open source HTML framework [reveal.js](https://github.com/hakimel/reveal.js). Please read through it through build an interactive presentation using the framework.
+
+# Contact
+
+For making any changes, please make a pull request and we will consider your change.
+
+# Acknowledgement
+
+We would like to acknowledge the faculty members of NIT Calicut for promoting us to conduct this presentation. We hope this presentation is useful even later for upcoming batches and can act as a reference to those who would like to refresh their rusty knowledge on Linux.
 
 A framework for easily creating beautiful presentations using HTML. [Check out the live demo](http://lab.hakim.se/reveal-js/).
 
@@ -486,15 +511,15 @@ You can also use different in and out transitions for the same slide:
 
 ```html
 <section data-transition="slide">
-    The train goes on … 
+    The train goes on …
 </section>
-<section data-transition="slide"> 
-    and on … 
+<section data-transition="slide">
+    and on …
 </section>
-<section data-transition="slide-in fade-out"> 
+<section data-transition="slide-in fade-out">
     and stops.
 </section>
-<section data-transition="fade-in slide-out"> 
+<section data-transition="fade-in slide-out">
     (Passengers entering and leaving)
 </section>
 <section data-transition="slide">
@@ -796,7 +821,7 @@ The multiplex plugin needs the following 3 things to operate:
 More details:
 
 #### Master presentation
-Served from a static file server accessible (preferably) only to the presenter. This need only be on your (the presenter's) computer. (It's safer to run the master presentation from your own computer, so if the venue's Internet goes down it doesn't stop the show.) An example would be to execute the following commands in the directory of your master presentation: 
+Served from a static file server accessible (preferably) only to the presenter. This need only be on your (the presenter's) computer. (It's safer to run the master presentation from your own computer, so if the venue's Internet goes down it doesn't stop the show.) An example would be to execute the following commands in the directory of your master presentation:
 
 1. ```npm install node-static```
 2. ```static```
@@ -869,7 +894,7 @@ You are very welcome to point your presentations at the Socket.io server running
 
 ##### socket.io server as file static server
 
-The socket.io server can play the role of static file server for your client presentation, as in the example at [http://revealjs.jit.su](http://revealjs.jit.su). (Open [http://revealjs.jit.su](http://revealjs.jit.su) in two browsers. Navigate through the slides on one, and the other will update to match.) 
+The socket.io server can play the role of static file server for your client presentation, as in the example at [http://revealjs.jit.su](http://revealjs.jit.su). (Open [http://revealjs.jit.su](http://revealjs.jit.su) in two browsers. Navigate through the slides on one, and the other will update to match.)
 
 Example configuration:
 ```javascript
@@ -966,7 +991,7 @@ Reveal.initialize({
 
 If you want to display math equations in your presentation you can easily do so by including this plugin. The plugin is a very thin wrapper around the [MathJax](http://www.mathjax.org/) library. To use it you'll need to include it as a reveal.js dependency, [find our more about dependencies here](#dependencies).
 
-The plugin defaults to using [LaTeX](http://en.wikipedia.org/wiki/LaTeX) but that can be adjusted through the ```math``` configuration object. Note that MathJax is loaded from a remote server. If you want to use it offline you'll need to download a copy of the library and adjust the ```mathjax``` configuration value. 
+The plugin defaults to using [LaTeX](http://en.wikipedia.org/wiki/LaTeX) but that can be adjusted through the ```math``` configuration object. Note that MathJax is loaded from a remote server. If you want to use it offline you'll need to download a copy of the library and adjust the ```mathjax``` configuration value.
 
 Below is an example of how the plugin can be configured. If you don't intend to change these values you do not need to include the ```math``` config object at all.
 
@@ -979,7 +1004,7 @@ Reveal.initialize({
 		mathjax: 'http://cdn.mathjax.org/mathjax/latest/MathJax.js',
 		config: 'TeX-AMS_HTML-full'  // See http://docs.mathjax.org/en/latest/config-files.html
 	},
-	
+
 	dependencies: [
 		{ src: 'plugin/math/math.js', async: true }
 	]
